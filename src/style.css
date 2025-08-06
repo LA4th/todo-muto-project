@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+
 @theme {
+  /* COLOR */
   --color-white: #F4F4F4;
   --color-black: #111111;
   --color-red: #961B27;
   --color-green: #961B27;
   --color-blue: #03204C;
   --color-grey: #555555;
+  /* FONT FAMILY */
+  --font-roboto: "Roboto", sans-serif;
+  --font-funnel: "Funnel Sans", sans-serif;
 }
 
 /* FOR DEBUG */
