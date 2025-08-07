@@ -8,7 +8,37 @@
   <title>To-Do Muto</title>
 </head>
 <body class="font-roboto">
-  
+  <nav class="bg-black w-full h-[60px]">
+    <!-- CONTAINER HEADER [900px] -->
+    <div class="bg-black m-auto pl-4 pr-4 max-w-full w-[900px] h-full flex justify-between items-center md:p-0">
+      <!-- LOGO -->
+      <span class="font-funnel text-4xl text-white font-bold">To-Do Muto</span>
+      <!-- BURGER BUTTON -->
+      <button id="burgerBtn" class="md:hidden border-1 border-white rounded-md p-[3px]"><i class="fa-solid fa-bars text-3xl text-white"></i></button>
+      <!-- NAV MENU -->
+      <ul id="navMenu" class="text-center pl-5 pr-5 pt-[100px] bg-black flex flex-col gap-8 fixed top-0 right-0 w-1/2 h-screen transition ease-in-out duration-300 transform translate-x-full opacity-0 pointer-events-none md:transform-none md:translate-x-0 md:opacity-100 md:static md:flex md:flex-row md:w-auto md:h-auto md:p-0">
+        <!-- CLOSE BUTTON -->
+        <li id="closeBtn" class="md:hidden fixed top-2.5 right-4 border-1 border-white rounded-md p-[3px]"><button type="button"><i class="fa-solid fa-xmark text-3xl text-white"></i></button></li>
+        <li class="md:transition md:duration-300"><a href="#" class="text-white bg-grey text-2xl font-bold rounded-md p-2 md:bg-transparent md:rounded-none md:text-[20px] md:border-b-2 md:border-transparent md:hover:border-red-500 md:cursor-pointer block">Home</a></li>
+        <li class="md:transition md:duration-300"><a href="#" class="text-white bg-grey text-2xl font-bold rounded-md p-2 md:bg-transparent md:rounded-none md:text-[20px] md:border-b-2 md:border-transparent md:hover:border-red-500 md:cursor-pointer block">Complete Task</a></li>
+        <li class="md:transition md:duration-300"><a href="#" class="text-white bg-grey text-2xl font-bold rounded-md p-2 md:bg-transparent md:rounded-none md:text-[20px] md:border-b-2 md:border-transparent md:hover:border-red-500 md:cursor-pointer block"> Pending Task</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- MAIN CONTAINER -->
+  <main id="mainContainer">
+    <!-- HOME VIEW SECTION -->
+    <section></section>
+    <!-- COMPLETE TASK VIEW SECTION -->
+    <section></section>
+  </main>
+  <!-- FOOTER INFO -->
+  <footer id="footerContainer" class="pl-3 pr-3 w-1/2 flex flex-col items-center gap-1 fixed bottom-4 right-0 transition ease-in-out duration-300 transform translate-x-full opacity-0 pointer-events-none">
+    <span class="text-white">&copy; 2025 To-Do Muto. All rights reserved.</span>
+    <hr class="w-full border-t-1 border-t-white">
+    <span class="text-white">Made by Enzo Laforteza</span>
+    <button class="text-white"><i class="fa-brands fa-github text-2xl"></i></button>
+  </footer>
 </body>
   <!-- SCRIPT SRC -->
   <script src="./src/main.js" type="module"></script>
