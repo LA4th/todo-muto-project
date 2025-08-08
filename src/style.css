@@ -5,9 +5,10 @@
 @theme {
   /* COLOR */
   --color-white: #F4F4F4;
+  --color-pureWhite: #FFFFFF;
   --color-black: #111111;
   --color-red: #961B27;
-  --color-green: #961B27;
+  --color-green: #228C22;
   --color-blue: #03204C;
   --color-grey: #555555;
   /* FONT FAMILY */

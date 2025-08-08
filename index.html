@@ -26,9 +26,71 @@
     </div>
   </nav>
   <!-- MAIN CONTAINER -->
-  <main id="mainContainer">
+  <main id="mainContainer" class="mt-5 mb-5 max-w-[900px] w-full m-auto flex flex-col">
     <!-- HOME VIEW SECTION -->
-    <section id="homeView"></section>
+    <section id="homeView" class="bg-white p-5 w-full rounded-md flex flex-col items-center gap-y-10">
+      <!-- SEARCHBAR CONTAINER -->
+      <div class="pl-8 pr-8 w-full flex flex-row items-center gap-x-2">
+        <input type="text" name="" id="" class="bg-pureWhite w-full pl-2 pr-2 pt-1 pb-1 rounded-md" placeholder="Search...">
+        <button type="button" class="font-bold bg-blue text-white rounded-md p-1 w-30">Search</button>
+      </div>
+      <!-- TASK VIEW CONTAINER -->
+      <div class="w-full flex flex-col gap-5">
+        <!-- TASK CONTAINER -->
+        <div class="w-full bg-pureWhite p-2 flex flex-row justify-between items-center gap-x-8">
+          <!-- TASK TITLE -->
+          <span class="truncate w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <!-- BUTTON TASK CONTAINER -->
+          <div class="flex flex-row items-center gap-x-4">
+            <!-- VIEW BUTTON -->
+            <button><i class="fa-solid fa-eye text-3xl"></i></button>
+            <!-- EDIT BUTTON -->
+            <button><i class="fa-solid fa-pen-to-square text-3xl"></i></button>
+            <!-- COMPLETE BUTTON -->
+            <button class="p-1 w-20 bg-red text-white font-bold">Complete</button>
+            <!-- REMOVE BUTTON -->
+            <button class="p-1 w-20 bg-green text-white font-bold">Remove</button>
+          </div>
+        </div>
+        <!-- COPY TASK ONLY 3 (DELETE LATER) -->
+        <div class="w-full bg-pureWhite p-2 flex flex-row justify-between items-center gap-x-8">
+          <!-- TASK TITLE -->
+          <span class="truncate w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <!-- BUTTON TASK CONTAINER -->
+          <div class="flex flex-row items-center gap-x-4">
+            <!-- VIEW BUTTON -->
+            <button><i class="fa-solid fa-eye text-3xl"></i></button>
+            <!-- EDIT BUTTON -->
+            <button><i class="fa-solid fa-pen-to-square text-3xl"></i></button>
+            <!-- COMPLETE BUTTON -->
+            <button class="p-1 w-20 bg-red text-white font-bold">Complete</button>
+            <!-- REMOVE BUTTON -->
+            <button class="p-1 w-20 bg-green text-white font-bold">Remove</button>
+          </div>
+        </div>
+        <div class="w-full bg-pureWhite p-2 flex flex-row justify-between items-center gap-x-8">
+          <!-- TASK TITLE -->
+          <span class="truncate w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <!-- BUTTON TASK CONTAINER -->
+          <div class="flex flex-row items-center gap-x-4">
+            <!-- VIEW BUTTON -->
+            <button><i class="fa-solid fa-eye text-3xl"></i></button>
+            <!-- EDIT BUTTON -->
+            <button><i class="fa-solid fa-pen-to-square text-3xl"></i></button>
+            <!-- COMPLETE BUTTON -->
+            <button class="p-1 w-20 bg-red text-white font-bold">Complete</button>
+            <!-- REMOVE BUTTON -->
+            <button class="p-1 w-20 bg-green text-white font-bold">Remove</button>
+          </div>
+        </div>
+      </div>
+      <!-- NUMBER SCROLL CLICK CONTAINER -->
+      <div class="flex flex-row gap-x-2">
+        <button type="button" class="bg-blue text-white font-bold rounded-md p-1 w-10">1</button>
+        <button type="button" class="bg-blue text-white font-bold rounded-md p-1 w-10">2</button>
+      </div>
+      <button class="w-35 p-1 bg-blue text-white font-bold rounded-md">Add Task</button>
+    </section>
     <!-- COMPLETE TASK VIEW SECTION -->
     <section id="completeTaskView"></section>
   </main>
