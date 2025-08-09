@@ -8,7 +8,7 @@
   <title>To-Do Muto</title>
 </head>
 <body class="font-roboto">
-  <nav class="bg-black w-full h-[60px]">
+  <nav class="bg-black w-full h-[60px] sticky top-0">
     <!-- CONTAINER HEADER [900px] -->
     <div class="bg-black m-auto pl-4 pr-4 max-w-full w-[900px] h-full flex justify-between items-center md:p-0">
       <!-- LOGO -->
@@ -26,7 +26,7 @@
     </div>
   </nav>
   <!-- MAIN CONTAINER -->
-  <main id="mainContainer" class="mt-5 mb-5 max-w-[900px] w-full m-auto flex flex-col">
+  <main id="mainContainer" class="mt-5 mb-5 max-w-[900px] w-full m-auto flex flex-col gap-y-20">
     <!-- HOME VIEW SECTION -->
     <section id="homeView" class="bg-white p-5 w-full rounded-md flex flex-col items-center gap-y-10">
       <!-- SEARCHBAR CONTAINER -->
@@ -35,7 +35,7 @@
         <button type="button" class="font-bold bg-blue text-white rounded-md p-1 w-30">Search</button>
       </div>
       <!-- TASK VIEW CONTAINER -->
-      <div class="w-full flex flex-col gap-5">
+      <div class="w-full h-[200px] flex flex-col gap-5">
         <!-- TASK CONTAINER -->
         <div class="w-full bg-pureWhite p-2 flex flex-row justify-between items-center gap-x-8">
           <!-- TASK TITLE -->
@@ -47,52 +47,46 @@
             <!-- EDIT BUTTON -->
             <button><i class="fa-solid fa-pen-to-square text-3xl"></i></button>
             <!-- COMPLETE BUTTON -->
-            <button class="p-1 w-20 bg-red text-white font-bold">Complete</button>
+            <button class="p-1 w-20 bg-green text-white font-bold">Complete</button>
             <!-- REMOVE BUTTON -->
-            <button class="p-1 w-20 bg-green text-white font-bold">Remove</button>
-          </div>
-        </div>
-        <!-- COPY TASK ONLY 3 (DELETE LATER) -->
-        <div class="w-full bg-pureWhite p-2 flex flex-row justify-between items-center gap-x-8">
-          <!-- TASK TITLE -->
-          <span class="truncate w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-          <!-- BUTTON TASK CONTAINER -->
-          <div class="flex flex-row items-center gap-x-4">
-            <!-- VIEW BUTTON -->
-            <button><i class="fa-solid fa-eye text-3xl"></i></button>
-            <!-- EDIT BUTTON -->
-            <button><i class="fa-solid fa-pen-to-square text-3xl"></i></button>
-            <!-- COMPLETE BUTTON -->
-            <button class="p-1 w-20 bg-red text-white font-bold">Complete</button>
-            <!-- REMOVE BUTTON -->
-            <button class="p-1 w-20 bg-green text-white font-bold">Remove</button>
-          </div>
-        </div>
-        <div class="w-full bg-pureWhite p-2 flex flex-row justify-between items-center gap-x-8">
-          <!-- TASK TITLE -->
-          <span class="truncate w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-          <!-- BUTTON TASK CONTAINER -->
-          <div class="flex flex-row items-center gap-x-4">
-            <!-- VIEW BUTTON -->
-            <button><i class="fa-solid fa-eye text-3xl"></i></button>
-            <!-- EDIT BUTTON -->
-            <button><i class="fa-solid fa-pen-to-square text-3xl"></i></button>
-            <!-- COMPLETE BUTTON -->
-            <button class="p-1 w-20 bg-red text-white font-bold">Complete</button>
-            <!-- REMOVE BUTTON -->
-            <button class="p-1 w-20 bg-green text-white font-bold">Remove</button>
+            <button class="p-1 w-20 bg-red text-white font-bold">Remove</button>
           </div>
         </div>
       </div>
       <!-- NUMBER SCROLL CLICK CONTAINER -->
-      <div class="flex flex-row gap-x-2">
-        <button type="button" class="bg-blue text-white font-bold rounded-md p-1 w-10">1</button>
-        <button type="button" class="bg-blue text-white font-bold rounded-md p-1 w-10">2</button>
+      <div class="flex flex-row justify-center gap-x-2">
+        <button type="button" class="bg-pureWhite text-black font-bold rounded-md p-1 w-10">1</button>
+        <button type="button" class="bg-pureWhite text-black font-bold rounded-md p-1 w-10">2</button>
       </div>
-      <button class="w-35 p-1 bg-blue text-white font-bold rounded-md">Add Task</button>
+      <!-- ADD TASK BUTTON -->
+      <button class="w-40 pl-1 pr-1 pt-2 pb-2 bg-blue text-white font-bold rounded-md ml-auto">Add Task</button>
     </section>
     <!-- COMPLETE TASK VIEW SECTION -->
-    <section id="completeTaskView"></section>
+    <section id="completeTaskView" class="bg-white p-5 w-full rounded-md flex flex-col items-center gap-y-10">
+      <span class="font-bold text-2xl mr-auto">Completed Task</span>
+      <!-- TASK VIEW CONTAINER -->
+      <div class="w-full h-[200px] flex flex-col gap-5">
+        <!-- TASK CONTAINER -->
+        <div class="w-full bg-pureWhite p-2 flex flex-row justify-between items-center gap-x-8">
+          <!-- TASK TITLE -->
+          <span class="truncate w-1/2 line-through">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <!-- BUTTON TASK CONTAINER -->
+          <div class="flex flex-row items-center gap-x-4">
+            <!-- VIEW BUTTON -->
+            <button><i class="fa-solid fa-eye text-3xl"></i></button>
+            <!-- REMOVE BUTTON -->
+            <button class="p-1 w-20 bg-red text-white font-bold">Remove</button>
+          </div>
+        </div>
+      </div>
+      <!-- NUMBER SCROLL CLICK CONTAINER -->
+      <div class="flex flex-row justify-center gap-x-2">
+        <button type="button" class="bg-pureWhite text-black font-bold rounded-md p-1 w-10">1</button>
+        <button type="button" class="bg-pureWhite text-black font-bold rounded-md p-1 w-10">2</button>
+      </div>
+      <!-- CLEAR TASK BUTTON -->
+      <button class="w-40 pl-1 pr-1 pt-2 pb-2 bg-red text-white font-bold rounded-md ml-auto">Clear List</button>
+    </section>
   </main>
   <!-- FOOTER INFO -->
   <footer id="footerContainer" class="bg-black pl-3 pr-3 w-1/2 flex flex-col items-center gap-1 fixed bottom-4 right-0 transition ease-in-out duration-300 transform translate-x-full opacity-0 pointer-events-none md:transform-none md:translate-x-0 md:opacity-100 md:pointer-events-auto md:static md:w-full md:mt-auto md:p-5">
